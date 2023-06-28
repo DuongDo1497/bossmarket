@@ -7,7 +7,7 @@
 
         @if($products->count() == 0)
         <div class="col-lg-12 mb-30">
-            @include($activeTemplate.'partials.empty_message', ['message' => __($empty_message)])
+            @include($activeTemplate.'partials.empty_message', ['message' => __($emptyMessage)])
         </div>
         @else
         <div class="row">
