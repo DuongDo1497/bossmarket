@@ -1980,6 +1980,7 @@ body *::-webkit-scrollbar-thumb {
 
 @media (min-width: 992px) {
     .category-link {
+        height: 100%;
         padding: 12px 0;
         position: relative;
     }
