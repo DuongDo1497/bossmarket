@@ -2013,10 +2013,10 @@ body *::-webkit-scrollbar-thumb {
     .category-link li .category-sublink {
         position: absolute;
         top: 0;
-        height: 100%;
+        height: auto;
         padding: 8px 0;
         background: #fff;
-        width: 200px;
+        width: 250px;
         border-left: 1px solid #e5e5e5;
         visibility: hidden;
         opacity: 0;
