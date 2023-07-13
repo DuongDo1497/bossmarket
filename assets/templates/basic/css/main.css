@@ -1084,7 +1084,7 @@ body *::-webkit-scrollbar-thumb {
 
 @media (max-width: 1199px) {
     .footer__widget.widget__info::after {
-        left: -35px;
+        left: -16px;
     }
 }
 
@@ -1097,6 +1097,10 @@ body *::-webkit-scrollbar-thumb {
 @media (max-width: 767px) {
     .footer__widget.widget__info::after {
         display: none;
+    }
+
+    .footer__widget-about .logo img{
+        width: 36%;
     }
 }
 
