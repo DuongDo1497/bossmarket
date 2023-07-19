@@ -28,6 +28,9 @@
                     <img src="{{ getImage(imagePath()['logoIcon']['path'] . '/logo.png') }}" alt="logo">
                   </a>
                 </div>
+                <p class="company-name mb-3">
+                  <b>@lang('Bossmarket Co., LTD')</b>
+                </p>
                 <p class="addr">
                   @lang(@$footer->footer_note)
                 </p>
@@ -63,7 +66,7 @@
                       <h6 class="contact__info-title">
                         <a href="Tel:{{ @$footer->cell_number }}">{{ @$footer->cell_number }}</a>
                       </h6>
-                      <span class="info">{{ @$footer->time }}</span>
+                      <span class="info">@lang(@$footer->time)</span>
                     </div>
                   </div>
                   <div class="contact__info style-two">

@@ -1,14 +1,14 @@
 <li>
-    <a href="{{ route('products.category', ['id'=>$subcategory->id, 'slug'=>slug($subcategory->name)]) }}">
-        {{ __($subcategory->name) }}
-    </a>
+  <a href="{{ route('products.category', ['id' => $subcategory->id, 'slug' => slug($subcategory->name)]) }}">
+    @lang(__($subcategory->name))
+  </a>
 
-    @if ($subcategory->allSubcategories && $subcategory->allSubcategories->count() >0)
+  @if ($subcategory->allSubcategories && $subcategory->allSubcategories->count() > 0)
     <span class="open-links"></span>
-        <ul class="category-sublink">
-            @foreach ($subcategory->allSubcategories as $childCategory)
-                @include($activeTemplate.'partials.menu_subcategories', ['subcategory' => $childCategory])
-            @endforeach
-        </ul>
-    @endif
+    <ul class="category-sublink">
+      @foreach ($subcategory->allSubcategories as $childCategory)
+        @include($activeTemplate . 'partials.menu_subcategories', ['subcategory' => $childCategory])
+      @endforeach
+    </ul>
+  @endif
 </li>
