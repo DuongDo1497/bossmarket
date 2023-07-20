@@ -175,10 +175,10 @@
                                                     <span class="ml-2 mr-auto">({{ __($item->reviews->count()) }})</span>
                                                     <div class="price">
                                                         @if($discount > 0)
-                                                            {{ $general->cur_sym }}{{ getAmount($item->base_price - $discount, 2) }}
+                                                            {{ getAmount($item->base_price - $discount, 2) }} {{ $general->cur_sym }}
                                                             <del>{{ getAmount($item->base_price, 2) }}</del>
                                                         @else
-                                                            {{ $general->cur_sym }}{{ getAmount($item->base_price, 2) }}
+                                                            {{ getAmount($item->base_price, 2) }} {{ $general->cur_sym }}
                                                         @endif
                                                     </div>
                                                 </div>
@@ -189,10 +189,10 @@
                                                 </button>
                                                 <div class="price">
                                                     @if($discount > 0)
-                                                    {{ $general->cur_sym }}{{ getAmount($item->base_price - $discount, 2) }}
+                                                    {{ getAmount($item->base_price - $discount, 2) }} {{ $general->cur_sym }}
                                                     <del>{{ getAmount($item->base_price, 2) }}</del>
                                                     @else
-                                                    {{ $general->cur_sym }}{{ getAmount($item->base_price, 2) }}
+                                                    {{ getAmount($item->base_price, 2) }} {{ $general->cur_sym }}
                                                     @endif
                                                 </div>
                                             </div>

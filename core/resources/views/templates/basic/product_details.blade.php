@@ -50,10 +50,10 @@
 
                     <div class="price">
                         @if($discount > 0)
-                            {{ $general->cur_sym }}<span class="special_price">{{ getAmount($product->base_price - $discount) }}</span>
-                            <del>{{ $general->cur_sym }}</del><del class="price-data">{{ getAmount($product->base_price) }}</del>
+                            <span class="special_price">{{ getAmount($product->base_price - $discount) }}</span> {{ $general->cur_sym }}
+                            <del class="price-data">{{ getAmount($product->base_price) }}</del> <del>{{ $general->cur_sym }}</del>
                         @else
-                            {{ $general->cur_sym }}<span class="price-data">{{ getAmount($product->base_price) }}</span>
+                            <span class="price-data">{{ getAmount($product->base_price) }}</span> {{ $general->cur_sym }}
                         @endif
                     </div>
 
@@ -326,10 +326,10 @@
                                         <span class="ml-2 mr-auto">({{ __($item->reviews->count()) }})</span>
                                         <div class="price">
                                             @if($discount_amount > 0)
-                                            {{ $general->cur_sym }}{{ getAmount($item->base_price - $discount_amount, 2) }}
+                                            {{ getAmount($item->base_price - $discount_amount, 2) }} {{ $general->cur_sym }}
                                             <del>{{ getAmount($item->base_price, 2) }}</del>
                                             @else
-                                            {{ $general->cur_sym }}{{ getAmount($item->base_price, 2) }}
+                                            {{ getAmount($item->base_price, 2) }} {{ $general->cur_sym }}
                                             @endif
                                         </div>
                                     </div>
@@ -340,10 +340,10 @@
                                     </button>
                                     <div class="price">
                                         @if($discount_amount > 0)
-                                        {{ $general->cur_sym }}{{ getAmount($item->base_price - $discount_amount, 2) }}
+                                        {{ getAmount($item->base_price - $discount_amount, 2) }} {{ $general->cur_sym }}
                                         <del>{{ getAmount($item->base_price, 2) }}</del>
                                         @else
-                                        {{ $general->cur_sym }}{{ getAmount($item->base_price, 2) }}
+                                        {{ getAmount($item->base_price, 2) }} {{ $general->cur_sym }}
                                         @endif
                                     </div>
                                 </div>
