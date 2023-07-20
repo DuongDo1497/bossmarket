@@ -50,7 +50,7 @@ function triggerOwl() {
   var thumbs = sync2.owlCarousel({
     items: 3,
     loop: false,
-    margin: 0,
+    margin: 10,
     nav: false,
     dots: false,
     responsive: {
