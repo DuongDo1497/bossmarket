@@ -19,9 +19,9 @@
   <div class="container">
     <div class="padding-bottom padding-top">
       <div class="row gy-5">
-        <div class="col-lg-6">
+        <div class="col-lg-5">
           <div class="row justify-content-between g-4">
-            <div class="col-md-5">
+            <div class="col-md-6">
               <div class="footer__widget footer__widget-about">
                 <div class="logo">
                   <a href="{{ route('home') }}">
@@ -54,7 +54,7 @@
               </div>
             </div>
 
-            <div class="col-md-7 col-xl-6">
+            <div class="col-md-6 col-xl-6">
               <div class="footer__widget widget__info">
                 <h5 class="widget--title">@lang('Contact Us')</h5>
                 <div>
@@ -85,8 +85,8 @@
 
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="row g-4 pl-xl-5">
+        <div class="col-lg-7">
+          <div class="row g-4 pl-xl-4">
             <div class="col-lg-4 col-6">
               <div class="footer__widget">
                 <h5 class="widget--title">@lang('Accounts')</h5>
@@ -106,7 +106,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-4 col-6">
+            <div class="col-lg-3 col-6">
               <div class="footer__widget">
                 <h5 class="widget--title">@lang('Top Brands')</h5>
                 <ul class="footer__links">
@@ -123,7 +123,7 @@
             @php
               $pages = \App\Models\Frontend::where('data_keys', 'pages.element')->get();
             @endphp
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-5 col-md-6">
               <div class="footer__widget">
                 <h5 class="widget--title">@lang('Policies & Terms')</h5>
                 <ul class="footer__links">

@@ -952,7 +952,11 @@ body *::-webkit-scrollbar-thumb {
 }
 
 .footer__widget-about .logo img {
-    width: 100%;
+    width: 65%;
+}
+
+.footer__widget-about .company-name{
+    font-size: 16px;
 }
 
 .footer__widget-about .addr {
@@ -1073,7 +1077,7 @@ body *::-webkit-scrollbar-thumb {
     bottom: 0;
     width: 1px;
     background: #e5e5e5;
-    left: -75px;
+    left: -22px;
 }
 
 @media (max-width: 1399px) {
@@ -1991,6 +1995,7 @@ body *::-webkit-scrollbar-thumb {
 
     .category-link li {
         padding: 0;
+        position: relative;
     }
 
     .category-link li a {
