@@ -281,7 +281,7 @@
                 max: {{$max_price}},
                 values: [ {{$min_price}}, {{$max_price}} ],
                 slide: function( event, ui ) {
-                    $( "#amount" ).val( "{{$general->cur_sym}}" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+                    $( "#amount" ).val( ui.values[ 0 ] + " {{$general->cur_sym}}" + " - " + ui.values[ 1 ] + " {{$general->cur_sym}}" );
                     $('input[name=min_price]').val(ui.values[ 0 ]);
                     $('input[name=max_price]').val(ui.values[ 1 ]);
                 },
@@ -299,7 +299,7 @@
             });
 
 
-            $( "#amount" ).val( "{{$general->cur_sym}}" + $( "#slider-range" ).slider( "values", 0 ) + " - {{$general->cur_sym}}" + $( "#slider-range" ).slider( "values", 1 ) );
+            $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) + " {{$general->cur_sym}}" + " - " + $( "#slider-range" ).slider( "values", 1 ) + " {{$general->cur_sym}}" );
 
             $('.filter-category li a').on('click', function(){
 

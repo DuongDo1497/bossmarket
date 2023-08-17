@@ -93,7 +93,7 @@
                                         </div>
                                         <span class="ml-2 mr-auto">({{ $item->reviews->count() }})</span>
                                         <div class="price">
-                                            {{ $general->cur_sym }}{{ showAmount($item->base_price) }}
+                                            {{ showAmount($item->base_price) }} {{ $general->cur_sym }}
                                         </div>
                                     </div>
                                 </div>
@@ -102,7 +102,7 @@
                                         @lang('View')
                                     </button>
                                     <div class="price">
-                                        {{$general->cur_sym }}{{ getAmount($item->base_price) }}
+                                        {{ getAmount($item->base_price) }} {{$general->cur_sym }}
                                     </div>
                                 </div>
                             </div>
