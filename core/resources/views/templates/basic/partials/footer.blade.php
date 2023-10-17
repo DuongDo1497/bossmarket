@@ -3,7 +3,7 @@
   if ($footer) {
       $footer = $footer->data_values;
   }
-  
+
   $categories = \App\Models\Category::where('is_top', 1)
       ->inRandomOrder()
       ->take(6)
@@ -12,7 +12,7 @@
       ->inRandomOrder()
       ->take(6)
       ->get();
-  
+
 @endphp
 
 <footer class="section-bg">
@@ -144,6 +144,11 @@
   </div>
   <div class="footer-bottom body-bg text-center">
     <div class="container">
+      <div class="company-info mb-4">
+        <p>Người chịu trách nhiệm kỹ thuật: Dũng - điện thoại: 0819048998</p>
+        <p>Mã số thuế doanh nghiệp: 0317918085 do sở kế hoạch đầu tư thành phố Hồ Chí Minh cấp lần đầu vào ngày
+          06/07/2023</p>
+      </div>
       <div class="d-flex flex-wrap justify-content-around justify-content-lg-between align-items-center">
         <div class="left py-2">
           {{ __(@$footer->copyright_text) }}
